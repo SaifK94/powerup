@@ -5,3 +5,4 @@ Most tutorials start with a basic "hello world" script, so we'll do the same.
 
 Let's make it work!!!
 """
+print("hello Daniel")
