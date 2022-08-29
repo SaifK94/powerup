@@ -9,6 +9,10 @@ Please print this out.
 Some variable: name, number_of_tim_tams
 """
 TimTams = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+TimTams = sorted([i for i in range(1, 12)], reverse=True)
+TimTams = sorted([i for i in range(1, 24)], reverse=True)
+
 print('Daniel has')
 print(TimTams)
 print('Tim Tams')
