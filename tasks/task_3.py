@@ -8,37 +8,12 @@ Please print this out.
 
 Some variable: name, number_of_tim_tams
 """
-TimTams = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-print('Daniel has')
-print(TimTams)
-print('Tim Tams')
-print('CHOMP')
-print('Daniel eats 2 Tim Tams.')
-TimTams[:2] = []
-print('Daniel now has')
-print(TimTams)
-print('Tim Tams')
-print('CHOMP')
-print('Daniel eats 2 Tim Tams.')
-TimTams[:2] = []
-print('Daniel now has')
-print(TimTams)
-print('Tim Tams')
-print('CHOMP')
-print('Daniel eats 2 Tim Tams.')
-TimTams[:2] = []
-print('Daniel now has')
-print(TimTams)
-print('Tim Tams')
-print('CHOMP')
-print('Daniel eats 2 Tim Tams.')
-TimTams[:2] = []
-print('Daniel now has')
-print(TimTams)
-print('Tim Tams')
-print('CHOMP')
-print('Daniel eats 2 Tim Tams.')
-TimTams[:2] = []
-print('Daniel now has')
-print(TimTams)
-print('Tim Tam')
+i = 11
+print('Daniel has 11 Tim Tams')
+while i>1:
+    print('Tim Tam Counter')
+    print(i)
+    print('Daniel eats two Tim Tams')
+    i -=2
+print('1 Tim Tam Remains')
+print('FINISH IT')
