@@ -20,7 +20,6 @@ Then, print the:
 - oldest and/or
 - person with fastest time
 
->>>>>>> Stashed changes
 """
 
 # SOME TYPES
@@ -63,17 +62,11 @@ people = {}
 people["Kai"] = {"is_cool": True}
 people["Saif"] = {"is_cool": True}
 
-<<<<<<< Updated upstream
 # print(len(people))
 
 # print(sorted(names)[-1])
 print("Saif", "is cool?", people.get("Saif").get("is_cool"))
 
-tim_tams = 11
-
-for i in range(tim_tams):
-    print(i)
-=======
 # people["Kai"] = 25
 # people["Saif"] = 26
 # people["Daniel"] = 126
@@ -84,4 +77,3 @@ for p in people:
     # print(p, people[p].get("is_cool"))
     print(p, people[p].get("is_this_person_cool"))
     # print(p, people[p]["is_this_person_cool"])
->>>>>>> Stashed changes
