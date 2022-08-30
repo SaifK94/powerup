@@ -8,12 +8,25 @@ Please print this out.
 
 Some variable: name, number_of_tim_tams
 """
-i = 11
+i = 11  # name it numberOfTimTams
+i = len(sorted([i for i in range(1, 11)], reverse=True))
+
+# timTams = 0
+
+# SaifHasWrittenSomeCode
+# saifHasWrittenSomeCode
+# saif_has_written_some_code
+
 print('Daniel has 11 Tim Tams')
-while i>1:
+while i > 1:
     print('Tim Tam Counter')
     print(i)
     print('Daniel eats two Tim Tams')
-    i -=2
+    if i % 2 == 0:  # is it an even number?
+        print("Quick check:", i)
+        i += 4
+    i -= 2
+    if i > 200:
+        break  # jump out of the loop
 print('1 Tim Tam Remains')
 print('FINISH IT')
