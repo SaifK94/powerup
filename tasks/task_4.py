@@ -1,10 +1,26 @@
 """
+<<<<<<< Updated upstream
 Task 4: Lists
+=======
+Task 4: Dictionaries, aka `dict`
+>>>>>>> Stashed changes
 
 - are you familiar and confident with: `strings` and `ints`
 - are you familiar and confident with: `lists` and `dictionaries`
 - are you familiar and confident with: `functions`
 
+<<<<<<< Updated upstream
+=======
+Brief:
+
+See if you can build a dictionary of 5 people, with their ages, best time in mario kart and height.
+
+Then, print the:
+- tallest,
+- oldest and/or
+- person with fastest time
+
+>>>>>>> Stashed changes
 """
 
 # SOME TYPES
@@ -47,6 +63,7 @@ people = {}
 people["Kai"] = {"is_cool": True}
 people["Saif"] = {"is_cool": True}
 
+<<<<<<< Updated upstream
 # print(len(people))
 
 # print(sorted(names)[-1])
@@ -56,3 +73,15 @@ tim_tams = 11
 
 for i in range(tim_tams):
     print(i)
+=======
+# people["Kai"] = 25
+# people["Saif"] = 26
+# people["Daniel"] = 126
+
+# print(people)
+
+for p in people:
+    # print(p, people[p].get("is_cool"))
+    print(p, people[p].get("is_this_person_cool"))
+    # print(p, people[p]["is_this_person_cool"])
+>>>>>>> Stashed changes
