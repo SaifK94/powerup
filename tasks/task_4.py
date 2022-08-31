@@ -1,15 +1,10 @@
 """
-<<<<<<< Updated upstream
-Task 4: Lists
-=======
 Task 4: Dictionaries, aka `dict`
->>>>>>> Stashed changes
 
 - are you familiar and confident with: `strings` and `ints`
 - are you familiar and confident with: `lists` and `dictionaries`
 - are you familiar and confident with: `functions`
 
-<<<<<<< Updated upstream
 =======
 Brief:
 
