@@ -8,67 +8,51 @@ Task 4: Dictionaries, aka `dict`
 =======
 Brief:
 
-See if you can build a dictionary of 5 people, with their ages, best time in mario kart and height.
+See if you can build a dictionary of 5 people, with their ages,
+best time in mario kart and height.
 
 Then, print the:
 - tallest,
 - oldest and/or
-- person with fastest time
+- person with the fastest time
 
 """
+import pprint
 
-# SOME TYPES
-
-am_i_cool = True
-# print(am_i_cool)
-
-if am_i_cool == "TRUE":
-    print("I am cool cos it's equal equal")
-elif am_i_cool:
-    print("I am cool")
-else:
-    print("You ain't cool!")
-
-name = "Kai"  # string
-age = "41"  # actually string
-age2 = 41  # float
-age3 = 41.5  # float
-
-# print(age3 * 2)
-
-# to protect against python 2 wanting to round down an int
-# print(age2 / 2.0)
-
-# LISTS
-
-names = ["Daniel", "Saif", "Kai"]
-
-# print(len(names))
-# print(sorted(names, reverse=True))
-
-names.append("Chiwoon")
-
-# print(len(names))
-# print(sorted(names, reverse=True))
-
-# DICTIONARY
-
-people = {}
-people["Kai"] = {"is_cool": True}
-people["Saif"] = {"is_cool": True}
-
-# print(len(people))
-
-# print(sorted(names)[-1])
-print("Saif", "is cool?", people.get("Saif").get("is_cool"))
-
-# people["Kai"] = 25
-# people["Saif"] = 26
-# people["Daniel"] = 126
-
-# print(people)
-
-for p in people:
-    # print(p, people[p].get("is_cool"))
-    print(p, people[p].get("is_this_person_cool"))
-    # print(p, people[p]["is_this_person_cool"])
+Racers = [
+    {'name': 'Daniel',
+     'age': 34,
+     'best time': '03:43',
+     'height': '178cm'
+     },
+    {'name': 'Saif',
+     'age': 28,
+     'best time': '03:15',
+     'height': '173cm'
+     },
+    {'name': 'Kai',
+     'age': 25,
+     'best time': '03:27',
+     'height': '170cm'
+     },
+    {'name': 'Isaac',
+     'age': 23,
+     'best time': '03:34',
+     'height': '180cm'
+     },
+    {'name': 'Liam',
+     'age': 32,
+     'best time': '03:50',
+     'height': '183cm'
+     }
+]
+# pprint.pprint(sorted(Racers, key=lambda x: x['age']))
+print('Tallest Racer')
+print(max(Racers, key=lambda x: x['height'])['name'])
+print(max(Racers, key=lambda x: x['height'])['height'])
+print('Youngest Racer')
+print(min(Racers, key=lambda x: x['age'])['name'])
+print(min(Racers, key=lambda x: x['age'])['age'])
+print('Fastest Racer')
+print(min(Racers, key=lambda x: x['best time'])['name'])
+print(min(Racers, key=lambda x: x['age'])['best time'])
