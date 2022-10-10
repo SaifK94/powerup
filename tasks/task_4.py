@@ -47,12 +47,25 @@ Racers = [
      }
 ]
 # pprint.pprint(sorted(Racers, key=lambda x: x['age']))
-print('Tallest Racer')
-print(max(Racers, key=lambda x: x['height'])['name'])
-print(max(Racers, key=lambda x: x['height'])['height'])
+
+racing_attributes = {
+    "height": "Tallest",
+}
+
+def get_racer_by(attribute):
+    _name = (max(Racers, key=lambda x: x[attribute])['name'])
+    _value = (max(Racers, key=lambda x: x[attribute])[attribute])
+    print('{attr} Racer: {name}, {value}'.format(
+        attr=racing_attributes[attribute],
+        name=_name,
+        value=_value
+    ))
+
+get_racer_by("height")
+
 print('Youngest Racer')
-print(min(Racers, key=lambda x: x['age'])['name'])
-print(min(Racers, key=lambda x: x['age'])['age'])
+# print(min(Racers, key=lambda x: x['age'])['name'])
+# print(min(Racers, key=lambda x: x['age'])['age'])
 print('Fastest Racer')
-print(min(Racers, key=lambda x: x['best time'])['name'])
-print(min(Racers, key=lambda x: x['best time'])['best time'])
+# print(min(Racers, key=lambda x: x['best time'])['name'])
+# print(min(Racers, key=lambda x: x['best time'])['best time'])
